@@ -1,0 +1,23 @@
+Inventory System
+
+Item
+    -Weapon
+        -bool isTwoHanded
+        -required stats
+        -equip()
+        -unequip()
+    -Armor
+        -enum slot{HEAD, CHEST, GLOVES, BELT, PANTS, BOOTS, NECK, RING}
+        -required stats
+        -equip()
+        -unequip()
+    -Consumable
+        -amount
+        -effect
+        -use()
+Inventory
+    -Equipped
+        -Vector <*item> // each vector[i] corresponds with slot
+    -Bag
+        -Max Slots
+        -Vector <*item>

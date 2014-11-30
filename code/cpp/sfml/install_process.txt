@@ -1,0 +1,29 @@
+INSTALLING SFML
+========================================
+- Download SFML source
+- Install Dependencies:
+    - libcmake
+    - libpthread
+    - libopengl
+    - libxlib
+    - libxrandr
+    - libfreetype
+    - libglew
+    - libjpeg
+    - libsndfile
+    - libopenal
+- cd into the src file
+- cmake -G "Unix Makefiles"
+    or
+- cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release -DBUILDSHAREDLIBS=TRUE
+- make
+- sudo make install
+- sudo ldconfig
+
+- COMPILING SFML PROGRAMS
+=========================================
+
+- g++ -c main.cpp
+- g++ main.o -o sfml-appname -lsfml-graphics -lsfml-window -lsfml-system
+- ./lsfml-appname
+

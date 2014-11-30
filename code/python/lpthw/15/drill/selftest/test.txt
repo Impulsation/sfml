@@ -1,0 +1,3 @@
+This is a file.
+It is meant to be read by test.py
+Hopefully it works.
